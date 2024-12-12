@@ -1,0 +1,54 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header section */
+.heading1 {
+    background-color: #3e8e41; /* Dark green background */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.heading1 h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* Links section */
+.links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3e8e41;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #d32f2f; /* Change color on hover */
+}
+

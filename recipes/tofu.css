@@ -1,72 +1,134 @@
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Div styling for structure */
-div {
-    margin: 20px auto;
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
-    max-width: 800px;
+}
+
+/* Section styles */
+section {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Headings styling */
-h1 {
-    color: #2c3e50;
-    font-size: 2.5em;
-}
-
-h2, h3 {
-    color: #34495e;
-    margin: 20px 0;
-}
-
-/* Image styling */
-img {
-    border-radius: 10px;
-    margin: 20px 0;
-    max-width: 100%;
-    height: auto;
-}
-
-/* List styling */
-ul, ol {
-    text-align: left;
-    margin: 20px auto;
-    padding-left: 40px;
-    max-width: 700px;
-}
-
-ul li, ol li {
-    margin: 10px 0;
-}
-
-/* Steps section specific */
-.steps {
-    background-color: #f1f1f1;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design */
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #ff5722; /* A vibrant orange-red color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Image styles */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* List styles */
+ul, ol {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Add some spacing between sections */
+section + section {
+    margin-top: 30px;
+}
+
+/* Add a hover effect for the list items (ingredients & steps) */
+li:hover {
+    color: #ff5722;
+    cursor: pointer;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Button styles */
+button {
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
-        font-size: 0.9em;
-    }
-
-    div {
-        padding: 15px;
+        padding: 10px;
     }
 
     h1 {
         font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
