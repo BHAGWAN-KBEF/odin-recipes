@@ -1,0 +1,69 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+}
+
+/* Steps Section Styling */
+.steps ol {
+    counter-reset: step-counter; /* Reset the custom counter */
+    list-style: none; /* Remove default list numbering */
+    padding-left: 0; /* Remove padding for list items */
+}
+
+.steps ol li {
+    position: relative; /* Enable custom numbering */
+    padding-left: 35px; /* Space for custom numbers */
+    margin-bottom: 15px; /* Space between steps */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.steps ol li::before {
+    counter-increment: step-counter; /* Increment the counter */
+    content: counter(step-counter) ". "; /* Custom number with period */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #e74c3c; /* Red color for numbers */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Section Headings */
+h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* General List Styling */
+ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Description Paragraph */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
