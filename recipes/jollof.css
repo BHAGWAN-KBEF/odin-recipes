@@ -1,69 +1,100 @@
-/* General Body Styling */
+/* jollof.css */
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 20px;
+    line-height: 1.6;
+    background-color: #fdf6e4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page container */
+section {
     max-width: 800px;
-    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Steps Section Styling */
-.steps ol {
-    counter-reset: step-counter; /* Reset the custom counter */
-    list-style: none; /* Remove default list numbering */
-    padding-left: 0; /* Remove padding for list items */
+/* Header styles */
+h1 {
+    font-size: 2rem;
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.steps ol li {
-    position: relative; /* Enable custom numbering */
-    padding-left: 35px; /* Space for custom numbers */
-    margin-bottom: 15px; /* Space between steps */
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.steps ol li::before {
-    counter-increment: step-counter; /* Increment the counter */
-    content: counter(step-counter) ". "; /* Custom number with period */
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #e74c3c; /* Red color for numbers */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Section Headings */
-h3 {
-    font-size: 20px;
-    color: #2c3e50;
+h2 {
+    font-size: 1.5rem;
+    color: #5a5a5a;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
-/* General List Styling */
-ul {
-    margin-left: 20px;
+h3 {
+    font-size: 1.2rem;
+    color: #31708f;
+    margin-top: 20px;
+}
+
+/* List styles */
+ul, ol {
+    margin: 10px 0;
     padding-left: 20px;
 }
 
-li {
-    font-size: 16px;
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+/* Image styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Strong emphasis for ingredients and steps headers */
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 5px;
+}
+
+/* Paragraph styles */
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Highlight important text */
+strong {
+    color: #d9534f;
+}
+
+/* Additional styling */
+li:last-child {
+    margin-bottom: 0;
+}
+
+ol li {
+    padding-left: 10px;
     line-height: 1.5;
 }
 
-/* Image Styling */
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 100%;
+a {
+    text-decoration: none;
+    color: #d9534f;
 }
 
-/* Description Paragraph */
-p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
+a:hover {
+    text-decoration: underline;
 }
